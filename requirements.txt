@@ -2,9 +2,9 @@ imageio
 torch
 matplotlib
 scikit-image==0.17.1
-imageio-ffmpeg==2.4.1
+imageio-ffmpeg
 PyYAML==5.3.1
 tqdm
 sklearn
 pandas
-moviepy
+moviepy==1.0.3
