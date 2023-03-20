@@ -1,7 +1,7 @@
 imageio
 torch
 matplotlib
-scikit-image
+scikit-image==0.16
 imageio-ffmpeg
 PyYAML==5.3.1
 tqdm
