@@ -2,7 +2,7 @@ imageio
 torch
 matplotlib
 scikit-image==0.17.1
-imageio-ffmpeg
+imageio-ffmpeg==2.4.1
 PyYAML==5.3.1
 tqdm
 sklearn
