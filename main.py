@@ -13,8 +13,9 @@ print('...Warnings')
 import warnings
 warnings.filterwarnings("ignore")
 print('...Source Image and Driving Video')
-source_image = imageio.imread('02.png')
-driving_video = imageio.mimread('04.mp4')
+drive_folder = '/content/drive/first-order-motion-model/'
+source_image = imageio.imread(drive_folder+'02.png')
+driving_video = imageio.mimread(drive_folder+'04.mp4')
 print('...First order model API')
 from firstordermodel.demo import load_checkpoints
 from firstordermodel.demo import make_animation
@@ -47,8 +48,8 @@ def display(source, driving, generated=None):
 
 print('Animating...')
 print('...Loading Checkpoints')
-generator, kp_detector = load_checkpoints(config_path='firstordermodel/config/vox-256.yaml',
-                            checkpoint_path='firstordermodel/vox-cpk.pth.tar')
+generator, kp_detector = load_checkpoints(config_path='/content/script/firstordermodel/config/vox-256.yaml',
+                            checkpoint_path=drive_folder+'vox-cpk.pth.tar')
 print('...Making Animation')
 predictions = make_animation(source_image, driving_video, generator, kp_detector, relative=True)
 
