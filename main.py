@@ -13,7 +13,7 @@ print('...Warnings')
 import warnings
 warnings.filterwarnings("ignore")
 print('...Source Image and Driving Video')
-drive_folder = '/content/drive/MyDrivefirst-order-motion-model/'
+drive_folder = '/content/drive/MyDrive/first-order-motion-model/'
 source_image = imageio.imread(drive_folder+'02.png')
 driving_video = imageio.mimread(drive_folder+'04.mp4')
 print('...First order model API')
