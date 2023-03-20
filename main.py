@@ -61,7 +61,7 @@ clip = VideoFileClip('generated.mp4')
 finalclip = clip.fx(vfx.speedx, 3)
 
 print('...Adding Background Music')
-audio = AudioFileClip('audio.mp3')
+audio = AudioFileClip('/content/script/audio.mp3')
 print('...Exporting final clip...')
 finalclip = finalclip.set_audio(audio)
 
