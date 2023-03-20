@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 print('...Source Image and Driving Video')
 drive_folder = '/content/drive/MyDrive/first-order-motion-model/'
 source_image = imageio.imread(drive_folder+'02.png')
-driving_video = imageio.mimread('04.mp4')
+driving_video = imageio.mimread('/content/script/04.mp4')
 print('...First order model API')
 from firstordermodel.demo import load_checkpoints
 from firstordermodel.demo import make_animation
